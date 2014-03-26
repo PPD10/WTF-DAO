@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="256" height="129" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="collisions" tilewidth="32" tileheight="32">
+  <image source="../collisions_tileset.png" width="1024" height="1024"/>
+  <tile id="268">
+   <properties>
+    <property name="food" value=""/>
+   </properties>
+  </tile>
+  <tile id="271">
+   <properties>
+    <property name="end" value=""/>
+   </properties>
+  </tile>
+  <tile id="400">
+   <properties>
+    <property name="sea" value=""/>
+   </properties>
+  </tile>
+  <tile id="403">
+   <properties>
+    <property name="factus" value=""/>
+   </properties>
+  </tile>
+  <tile id="499">
+   <properties>
+    <property name="ground" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="503">
+   <properties>
+    <property name="ground" value=""/>
+   </properties>
+  </tile>
+  <tile id="504">
+   <properties>
+    <property name="noProblem" value=""/>
+   </properties>
+  </tile>
+  <tile id="536">
+   <properties>
+    <property name="border" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="1025" name="tileset" tilewidth="32" tileheight="32">
+  <image source="tileset.png" trans="ffffff" width="1024" height="1024"/>
+ </tileset>
+ <tileset firstgid="2049" name="background" tilewidth="32" tileheight="32">
+  <image source="background.png" trans="ffffff" width="1024" height="1024"/>
+ </tileset>
+ <layer name="sky" width="256" height="129">
+  <data encoding="base64" compression="zlib">
+   eJzt1klSVEEUBdA/KCIUEBTXQI+IugZpFgLoTpVOwU0INghMKsKJdwMMQOpnJnUGZ/76zOFE1w0BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgEfl06DrPsdBHMZRHMdJfImvcRpn8W1QPt7WchyH+tKu75m587iIH/EzfsXvuIw/cRXXcdPofJbMcRzqexu3r35P4mlMxlRMx7OYidl4Hi9iLl5WEG9rOZau73z2aiEWYymWe9yzlm9fK7frf/u7FMuxEquxFq9iPV7HRryJt/Gugr7cR8kcS9f3feZhM7ZiO3Z6nNU+bt+o7lsrt6tkf8dVyTf1rnYT217sx4f42GOsfdy+Uc1/6X9b7f1taQcemptbj1HNf+l/W+3GeQdKvqlQAzsAPCZ/K4gBKMP+AwBAv/4BUonc8w==
+  </data>
+ </layer>
+ <layer name="ground" width="256" height="129">
+  <data encoding="base64" compression="zlib">
+   eJzt00tOQkEQBdAeEHcC/lZAwhQEXQcouhPdtNcEZj2AFz4tfU5ycyfQVCVUKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA5zUelTJJ7pOH5HF07YmAS5nn3hfJS7JMVu4furHOvW+S9+Qj2bp/AAD498Z3pUyS5+RpQE93Gfr9Wu/fPMV7f+/MDvx8zSn3Omb/2Rnfv/aeh+xXc4n5jvm/tPQ7Q9+bJ4vkLXntvGtamKvHPWtamOvWep1skq/ks/OuaWGuHvesaWGuW+v9/f8k31rrrvoXvyN44g==
+  </data>
+ </layer>
+ <layer name="bush" width="256" height="129" opacity="0.53">
+  <data encoding="base64" compression="zlib">
+   eJzt0McRAjAQA0B/6Z3YCKEQUiGkDlAThrNnd0Z/Sa0BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1LJatLZONsk22S3+3aiGmX6psKVCh15G3rZM131ySI7JaaDuPc30S4UtFTr0MvK2c7pekmtyS+4Dde9ppl8qbKnQoZeRtz3S9Zm8knfyGah7TzP9UmFLhQ69zLwNAAD4vS/lZU18
+  </data>
+ </layer>
+ <layer name="factus" width="256" height="129">
+  <data encoding="base64" compression="zlib">
+   eJzt0LENgDAUQ8F07D8CbAKbwCTQ0qL8xEJ3E/i5NQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAedaltW2ZveKtalNla+KPPSX3jdqW/MFX+9NzhDVVbapsTfyxp+S+UduSP/jqfHqusKaqTZWtiT/2lNw3alvyBwAAwD/d6IIg5g==
+  </data>
+ </layer>
+ <layer name="walls" width="256" height="129">
+  <data encoding="base64" compression="zlib">
+   eJzt0rEJgEAQRUGTswTr0MT+SzCyFGMFzdfA5YSdgU2P4/GHAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADoZW+9f0Blmfuz7dih0ee2dm/vzVU3jXlv23Yss39V89V0CW59rrrMBvrGNAIAAP7uBCbmET0=
+  </data>
+ </layer>
+ <layer name="sea" width="256" height="129">
+  <data encoding="base64" compression="zlib">
+   eJzt07kNgDAQRUEi98VVCBj6bwFLDnBGiL2akV6+P9hpAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgy5Zqe1NEc9m1lNZmb29GuJFYrlS7myI6yq6zlJu9vRnhRmLJ6c3//2uEGyN4AFoSEKo=
+  </data>
+ </layer>
+ <layer name="end" width="256" height="129">
+  <data encoding="base64" compression="zlib">
+   eJzt0zcVQlEURNHXfW0kISQhJCEkISQhJA+MAGoo7t5rnX6aaQ0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOC7XtdaPw3SMI26fy8CfmWcv0/SNM3S3P+hjEX+vkyrtE4b/4cytvn7Lu3TIR39H8o45e/ndEnXdPN/KOOevz/SM73S2/8BAKC8D1/kEv0=
+  </data>
+ </layer>
+ <layer name="collisions" width="256" height="129" opacity="0">
+  <data encoding="base64" compression="zlib">
+   eJzt0zEOwjAQBMBAj0SbZyPx1BTQ0SEKpMRObJ/jKaZLTnsn73ydphkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACggvcFOJt7gAxAG5H7f/ux9bs1azNScx05N/c+qf/k3H/PHkfNKTG7drbc91lqh8j9B8rSfxiX/sO49B/G1aL/zwB718pUcteIdxxlv9xsS7Ab6H/ZTNH6n/r+Ws6O+E72ZtP/43daEtS+s/7HvF2rbL32/8XX44/WmUbds4eMnMsob66HPXvICNCzD+/jk5o=
+  </data>
+ </layer>
+</map>
