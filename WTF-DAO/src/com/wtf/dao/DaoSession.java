@@ -4,8 +4,8 @@ import java.util.Map;
 
 import android.database.sqlite.SQLiteDatabase;
 
-import com.wtf.models.Device;
 import com.wtf.models.Level;
+import com.wtf.models.Player;
 
 import de.greenrobot.dao.AbstractDao;
 import de.greenrobot.dao.AbstractDaoSession;
@@ -21,36 +21,36 @@ import de.greenrobot.dao.internal.DaoConfig;
  */
 public class DaoSession extends AbstractDaoSession {
 
-	private final DaoConfig deviceDaoConfig;
+	private final DaoConfig playerDaoConfig;
 	private final DaoConfig levelDaoConfig;
 
-	private final DeviceDao deviceDao;
+	private final PlayerDao playerDao;
 	private final LevelDao levelDao;
 
 	public DaoSession(SQLiteDatabase db, IdentityScopeType type,
 			Map<Class<? extends AbstractDao<?, ?>>, DaoConfig> daoConfigMap) {
 		super(db);
 
-		deviceDaoConfig = daoConfigMap.get(DeviceDao.class).clone();
-		deviceDaoConfig.initIdentityScope(type);
+		playerDaoConfig = daoConfigMap.get(PlayerDao.class).clone();
+		playerDaoConfig.initIdentityScope(type);
 
 		levelDaoConfig = daoConfigMap.get(LevelDao.class).clone();
 		levelDaoConfig.initIdentityScope(type);
 
-		deviceDao = new DeviceDao(deviceDaoConfig, this);
+		playerDao = new PlayerDao(playerDaoConfig, this);
 		levelDao = new LevelDao(levelDaoConfig, this);
 
-		registerDao(Device.class, deviceDao);
+		registerDao(Player.class, playerDao);
 		registerDao(Level.class, levelDao);
 	}
 
 	public void clear() {
-		deviceDaoConfig.getIdentityScope().clear();
+		playerDaoConfig.getIdentityScope().clear();
 		levelDaoConfig.getIdentityScope().clear();
 	}
 
-	public DeviceDao getDeviceDao() {
-		return deviceDao;
+	public PlayerDao getPlayerDao() {
+		return playerDao;
 	}
 
 	public LevelDao getLevelDao() {

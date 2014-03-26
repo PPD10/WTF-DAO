@@ -7,8 +7,9 @@ package com.wtf.models;
 public class Level {
 
 	private Long id;
+	/** Not-null value. */
 	private String name;
-	private Integer maxScore;
+	private int maxScore;
 
 	public Level() {
 	}
@@ -17,7 +18,7 @@ public class Level {
 		this.id = id;
 	}
 
-	public Level(Long id, String name, Integer maxScore) {
+	public Level(Long id, String name, int maxScore) {
 		this.id = id;
 		this.name = name;
 		this.maxScore = maxScore;
@@ -31,19 +32,24 @@ public class Level {
 		this.id = id;
 	}
 
+	/** Not-null value. */
 	public String getName() {
 		return name;
 	}
 
+	/**
+	 * Not-null value; ensure this value is available before it is saved to the
+	 * database.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	public Integer getMaxScore() {
+	public int getMaxScore() {
 		return maxScore;
 	}
 
-	public void setMaxScore(Integer maxScore) {
+	public void setMaxScore(int maxScore) {
 		this.maxScore = maxScore;
 	}
 
