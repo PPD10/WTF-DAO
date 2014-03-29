@@ -1,4 +1,4 @@
-package com.wtf.screens;
+package com.wtf.screens.ui;
 
 import java.util.Iterator;
 

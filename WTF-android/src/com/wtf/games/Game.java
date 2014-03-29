@@ -62,7 +62,7 @@ public class Game {
 				.getLayers().get("collisions");
 		int tileXMax = layer.getWidth();
 		int tileYMax = layer.getHeight();
-
+		
 		for (int tileX = 0; tileX < tileXMax; ++tileX)
 			for (int tileY = 0; tileY < tileYMax; ++tileY)
 				if (cellHasLayerProperty(layer, tileX, tileY, "food"))

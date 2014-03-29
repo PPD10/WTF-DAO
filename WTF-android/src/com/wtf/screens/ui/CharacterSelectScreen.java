@@ -1,4 +1,4 @@
-package com.wtf.screens;
+package com.wtf.screens.ui;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
@@ -11,6 +11,7 @@ import com.wtf.WTF;
 import com.wtf.assets.UIAssets;
 import com.wtf.entities.graphical.characters.CharacterEnum;
 import com.wtf.levels.LevelEnum;
+import com.wtf.screens.GameScreen;
 
 /**
  * Ecran de sélection du personnage

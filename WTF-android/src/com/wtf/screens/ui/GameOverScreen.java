@@ -1,4 +1,4 @@
-package com.wtf.screens;
+package com.wtf.screens.ui;
 
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;

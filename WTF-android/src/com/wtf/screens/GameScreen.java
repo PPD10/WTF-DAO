@@ -18,6 +18,7 @@ import com.wtf.games.Game;
 import com.wtf.inputs.PlayerGestureListener;
 import com.wtf.levels.LevelEnum;
 import com.wtf.models.Level;
+import com.wtf.screens.ui.GameOverScreen;
 
 public class GameScreen implements Screen {
 

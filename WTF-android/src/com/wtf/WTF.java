@@ -7,7 +7,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.wtf.assets.UIAssets;
 import com.wtf.dao.DaoSession;
-import com.wtf.screens.MainScreen;
+import com.wtf.screens.ui.MainScreen;
 
 public class WTF extends Game {
 

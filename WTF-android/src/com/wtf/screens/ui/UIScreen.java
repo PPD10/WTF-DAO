@@ -1,4 +1,4 @@
-package com.wtf.screens;
+package com.wtf.screens.ui;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
